@@ -1,21 +1,37 @@
-using Godot;
-using System;
-
-public class Main : Spatial
+namespace Global
 {
-	// Declare member variables here. Examples:
-	// private int a = 2;
-	// private string b = "text";
+	using Godot;
+	using System;
+	using System.Collections.Generic;
+	using Input;
+	using Global;
+	using Actor;
 
-	// Called when the node enters the scene tree for the first time.
-	public override void _Ready()
+	public class Main : Spatial
 	{
+		public static InputState inputState;
+		public List<Actor> activeActors;
+
+		public override void _Ready()
+		{
+			activeActors = new List<Actor>();
+			inputState = new InputState(InputConstants.DefaultKeyMappings(), InputConstants.DefaultAxisMappings());
+			AddChild(inputState);
+			AddActor(Constants.RaccoonActor(true, Constants.SpawnPoint()));
+		}
+
+		public void AddActor(Actor actor)
+		{
+			activeActors.Add(actor);
+			inputState.Subscribe(actor.body);
+			AddChild(actor.body);
+		}
+
+		public void RemoveActor(Actor actor)
+		{
+			activeActors.Remove(actor);
+			inputState.Unsubscribe(actor.body);
+		}
 		
 	}
-
-//  // Called every frame. 'delta' is the elapsed time since the previous frame.
-//  public override void _Process(float delta)
-//  {
-//      
-//  }
 }
