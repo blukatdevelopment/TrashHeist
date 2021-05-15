@@ -1,0 +1,8 @@
+/home/blukat/localdev/TrashHeist/.mono/temp/bin/Debug/Trash Heist.dll
+/home/blukat/localdev/TrashHeist/.mono/temp/bin/Debug/Trash Heist.pdb
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.csprojAssemblyReference.cache
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.AssemblyInfoInputs.cache
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.AssemblyInfo.cs
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.csproj.CoreCompileInputs.cache
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.dll
+/home/blukat/localdev/TrashHeist/.mono/temp/obj/Debug/Trash Heist.pdb

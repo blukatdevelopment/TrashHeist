@@ -1,0 +1,2 @@
+﻿46073
+/home/blukat/Documents/godot/Godot_v3.3-stable_mono_x11.64

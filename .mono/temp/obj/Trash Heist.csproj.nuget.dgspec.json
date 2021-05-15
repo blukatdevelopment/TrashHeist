@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/blukat/localdev/TrashHeist/Trash Heist.csproj": {}
+  },
+  "projects": {
+    "/home/blukat/localdev/TrashHeist/Trash Heist.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/blukat/localdev/TrashHeist/Trash Heist.csproj",
+        "projectName": "Trash Heist",
+        "projectPath": "/home/blukat/localdev/TrashHeist/Trash Heist.csproj",
+        "packagesPath": "/home/blukat/.nuget/packages/",
+        "outputPath": "/home/blukat/localdev/TrashHeist/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/blukat/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
