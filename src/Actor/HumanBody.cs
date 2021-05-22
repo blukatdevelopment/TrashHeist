@@ -3,9 +3,9 @@ namespace Actor
 	using Input;
 	using Godot;
 	using Global;
-	using Menu;
+	using AI;
 
-	public class RaccoonBody : Body
+	public class HumanBody: Body
 	{
 		[Export]
 		public float movementSpeed;
@@ -17,22 +17,19 @@ namespace Actor
 		public Vector3 jumpThrust;
 		[Export]
 		public float gravityStrength;
+		[Export]
 		public bool jumpReady;
-		public float interactDelay;
+
 		public CollisionShape torso;
-	
-		public void AssignActor(Actor actor, bool addCamera, string headNodePath, string torsoPath, Vector3 cameraPosition)
+		public HumanAI agent;
+
+		public void AssignActor(Actor actor, string headNodePath, string torsoPath)
 		{
 		  this.actor = actor;
 		  jumpThrust = new Vector3();
 		  head = FindNode(headNodePath) as Spatial;
-		  if(addCamera)
-		  {
-			camera = new Camera();
-			head.AddChild(camera);
-			camera.Transform = camera.Transform.Translated(cameraPosition);
-		  }
 		  torso = FindNode(torsoPath) as CollisionShape;
+		  agent = new HumanAI(this);
 		  Resume();
 		}
 
@@ -46,7 +43,6 @@ namespace Actor
 				HandleStrafing(actionEvent);
 				HandleAiming(actionEvent);
 				HandleJumping(actionEvent);
-				HandleInteraction(actionEvent);
 			}
 		}
 	
@@ -59,20 +55,9 @@ namespace Actor
 				ApplyGravity();
 				UpdateJumpThrust();
 				Aim(aimMagnitude);
-				AimCamera();
 				aimMagnitude = new Vector3();
-				UpdateInteractDelay();
+				agent.Update(delay);
 			}
-		}
-
-		private void UpdateInteractDelay()
-		{
-			interactDelay += delay;
-		}
-
-		public void AimCamera()
-		{
-			camera.Transform = camera.Transform.LookingAt(torso.Transform.origin, Constants.Up());
 		}
 	
 		public void Aim(Vector3 aimMagnitude)
@@ -107,14 +92,12 @@ namespace Actor
 		{
 			paused = true;
 			Input.SetMouseMode(Input.MouseMode.Visible);
-			Main.Game.menuManager.SwitchMenu(MenuManager.Menus.Pause);
 		}
 	
 		public override void Resume()
 		{
 			paused = false;
 			Input.SetMouseMode(Input.MouseMode.Captured);
-			Main.Game.menuManager.SwitchMenu(MenuManager.Menus.None);
 		}
 	
 		protected void HandleStrafing(ActionEvent actionEvent)
@@ -160,36 +143,6 @@ namespace Actor
 				break;
 			}
 		}
-
-		protected void HandleInteraction(ActionEvent actionEvent)
-		{
-			if(actionEvent.action != ActionEnum.InteractEnd || interactDelay < Constants.InteractDelay)
-			{
-				return;
-			}
-			Vector3 startPoint = Transform.origin;
-			Vector3 endPoint = ForwardPoint(Constants.InteractDistance);
-			Node resultNode = Utility.Raycast(startPoint, endPoint, GetWorld()) as Node;
-			if(resultNode == null)
-			{
-				return;
-			}
-			if(resultNode.IsInGroup(Constants.TrashCanGroup))
-			{
-				GD.Print("Interacting with trash can!");
-				Main.TrashGathered++;
-				Main.Game.AlertHumans();
-			}
-		}
-
-		protected Vector3 ForwardPoint(float distance)
-		{
-			Vector3 start = Transform.origin;
-			Vector3 end = -Transform.basis.z;
-			end *= distance;
-			end += start;
-			return end;
-		}
 	
 		protected void HandlePause(ActionEvent actionEvent)
 		{
@@ -214,6 +167,7 @@ namespace Actor
 			{
 				jumpThrust = jump;
 				jumpReady = false;
+				
 			}
 			if(actionEvent.action == ActionEnum.JumpEnd)
 			{

@@ -66,13 +66,13 @@ namespace Actor
             delay += delta;
             if(delay >= Constants.ActionHandlingDelay)
             {
-                delay = 0f;
                 foreach(ActionEvent actionEvent in actionEventsQueue)
                 {
                     HandleAction(actionEvent);
                 }
                 actionEventsQueue = new List<ActionEvent>();
                 PostEventsUpdate();
+                delay = 0f;
             }
         }
   

@@ -20,9 +20,11 @@ namespace Input
         new KeyMapping(KeyList.D, InputModeEnum.PressEnd, ActionEnum.MoveRightEnd, ActionEnum.MoveRight),
         new KeyMapping(KeyList.A, InputModeEnum.PressStart, ActionEnum.MoveLeft, ActionEnum.MoveLeftEnd),
         new KeyMapping(KeyList.A, InputModeEnum.PressEnd, ActionEnum.MoveLeftEnd, ActionEnum.MoveLeft),
-        new KeyMapping(KeyList.Space, InputModeEnum.PressStart, ActionEnum.Fire, ActionEnum.FireEnd),
-        new KeyMapping(KeyList.Space, InputModeEnum.PressEnd, ActionEnum.FireEnd, ActionEnum.Fire),
-        new KeyMapping(KeyList.Escape, InputModeEnum.PressEnd, ActionEnum.TogglePlayerPause)
+        new KeyMapping(KeyList.Space, InputModeEnum.PressStart, ActionEnum.Jump, ActionEnum.JumpEnd),
+        new KeyMapping(KeyList.Space, InputModeEnum.PressEnd, ActionEnum.JumpEnd, ActionEnum.Jump),
+        new KeyMapping(KeyList.Escape, InputModeEnum.PressEnd, ActionEnum.TogglePlayerPause),
+        new KeyMapping(KeyList.E, InputModeEnum.PressStart, ActionEnum.Interact),
+        new KeyMapping(KeyList.E, InputModeEnum.PressEnd, ActionEnum.InteractEnd),
       };
     }
 
