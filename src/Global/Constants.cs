@@ -2,6 +2,8 @@ namespace Global
 {
 	using Godot;
 	using Actor;
+	using Audio;
+	using System.Collections.Generic;
 
 	public static class Constants
 	{
@@ -16,19 +18,43 @@ namespace Global
 		public const float JumpDecay = 0.75f;
 		public const float InteractDelay = 0.1f;
 		public const float InteractDistance = 3f;
+		public const float ExitRadius = 7f;
+		public const float SoundEffectsVolume = -6f;
+
 
 		public const float HumanSightRadius = 20f;
 		public const float HumanCatchRadius = 5f;
+		public const string SpawnPointName = "Spawnpoint";
+		public const string HumanSpawnName = "HumanSpawn";
 		public const string TrashCanGroup = "TrashCan";
+		public const string HazardGroup = "HazardGroup";
 		public const string ActorHeadPath = "HeadSpatial";
 		public const string ActorTorsoPath = "TorsoCShape";
 		public const string RaccoonScene = "res://Assets//Scenes/Raccoon.tscn";
 		public const string HumanScene = "res://Assets//Scenes/Human.tscn";
-		
 
-		public static Vector3 SpawnPoint()
+		public static List<string> Songs()
 		{
-			return new Vector3(0f, 10f, 0f);
+			return new List<string>
+			{
+				"res://Assets/Audio/Songs/layBumbleBee.ogg",
+				"res://Assets/Audio/Songs/HarpsicordMeander.ogg",
+				"res://Assets/Audio/Songs/Flutetastic.ogg",
+				"res://Assets/Audio/Songs/BassWalk.ogg",
+				"res://Assets/Audio/Songs/BassStroll.ogg"
+			};
+		}
+
+		public static List<string> Levels()
+		{
+			return new List<string>
+			{
+				"res://Assets/Scenes/Levels/Level1.tscn",
+				"res://Assets/Scenes/Levels/Level2.tscn",
+				"res://Assets/Scenes/Levels/Level3.tscn",
+				"res://Assets/Scenes/Levels/Level4.tscn",
+				"res://Assets/Scenes/Levels/Level5.tscn"
+			};
 		}
 
 		public static Vector3 Up()
@@ -76,6 +102,15 @@ namespace Global
 			actor.body = body;
 			
 			return actor;
+		}
+
+		public static Dictionary<SoundEnum, string> SoundEffects()
+		{
+			return new Dictionary<SoundEnum, string>
+			{
+				{SoundEnum.RaccoonJump, "res://Assets/Audio/SoundEffects/RaccoonJump.ogg"},
+				{SoundEnum.RaccoonWalk, "res://Assets/Audio/SoundEffects/RaccoonWalk.ogg"}
+			};
 		}
 	}
 }

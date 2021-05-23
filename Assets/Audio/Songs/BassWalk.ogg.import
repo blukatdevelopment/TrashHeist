@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BassWalk.ogg-27adf2171edcfa62813ac1b3fba633f4.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Songs/BassWalk.ogg"
+dest_files=[ "res://.import/BassWalk.ogg-27adf2171edcfa62813ac1b3fba633f4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

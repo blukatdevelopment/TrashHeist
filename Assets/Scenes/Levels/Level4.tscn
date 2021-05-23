@@ -1,0 +1,126 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Scenes/Scenery/Platform.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scenes/Scenery/Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Scenery/House1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/ExitPortal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Scenes/Scenery/TrashCan.tscn" type="PackedScene" id=5]
+
+[node name="Level4" type="Spatial"]
+
+[node name="Spawnpoint" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 234.525, 108.199 )
+
+[node name="HumanSpawn" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7581, 13, -59.2157 )
+
+[node name="Floor" parent="." groups=[
+"HazardGroup",
+] instance=ExtResource( 2 )]
+
+[node name="ExitPortal" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 0.25, 0, 0, 0, 4, 0, 252.218, -526.376 )
+
+[node name="House1" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 50, 0, 0, 0, 5, 0, 0, -574.938 )
+
+[node name="House2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 50, 0, 0, 0, 5, 0, 0, 155.206 )
+
+[node name="Platform" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 0, 229.035, 105.86 )
+
+[node name="Platform2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -19.7244, 229.035, 75.2367 )
+
+[node name="Platform3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -49.4015, 229.035, 75.2367 )
+
+[node name="Platform4" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -49.4015, 229.035, 43.7214 )
+
+[node name="Platform5" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -49.4015, 229.035, 10.6962 )
+
+[node name="Platform6" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.4781, 229.035, -11.0656 )
+
+[node name="Platform7" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.4781, 235.08, -34.9566 )
+
+[node name="Platform8" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -33.8365, 249.872, -103.674 )
+
+[node name="Platform27" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.4781, 243.02, -85.0882 )
+
+[node name="Platform10" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.4781, 255.924, -116.784 )
+
+[node name="Platform11" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.4781, 260.299, -141.292 )
+
+[node name="Platform12" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 12.6573, 266.383, -141.318 )
+
+[node name="Platform28" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 12.6573, 272.993, -158.463 )
+
+[node name="Platform13" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 1.22947, 275.925, -175.951 )
+
+[node name="Platform14" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -29.0372, 212.368, -175.951 )
+
+[node name="Platform15" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -29.0372, 212.368, -216.084 )
+
+[node name="Platform16" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -29.0372, 212.368, -252.758 )
+
+[node name="Platform17" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -3.36537, 212.368, -273.317 )
+
+[node name="Platform18" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 5.91665, 212.368, -301.713 )
+
+[node name="Platform19" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -25.7714, 216.099, -326.26 )
+
+[node name="Platform29" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 5.91665, 219.984, -347.914 )
+
+[node name="Platform20" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -13.4705, 222.649, -371.922 )
+
+[node name="Platform21" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 13.7782, 222.649, -388.884 )
+
+[node name="Platform22" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -2.65456, 226.815, -405.847 )
+
+[node name="Platform23" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 2.06713, 231.949, -424.731 )
+
+[node name="Platform24" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 2.06713, 236.126, -469.201 )
+
+[node name="Platform30" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 2.06713, 232.948, -448.78 )
+
+[node name="Platform31" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 4.28173, 247.058, -510.57 )
+
+[node name="Platform25" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 2.06713, 243.303, -492.396 )
+
+[node name="Platform26" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, 2.06713, 251.418, -525.471 )
+
+[node name="Platform9" parent="." instance=ExtResource( 1 )]
+transform = Transform( 9, 0, 0, 0, 0.25, 0, 0, 0, 9, -15.379, 239.015, -59.6954 )
+
+[node name="TrashCan" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63644, 252.56, -530.067 )

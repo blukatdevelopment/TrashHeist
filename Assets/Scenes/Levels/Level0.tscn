@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Scenes/Scenery/Stairs.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scenes/Scenery/Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Scenery/House1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/ExitPortal.tscn" type="PackedScene" id=4]
+
+[node name="Level1" type="Spatial"]
+
+[node name="Staircase" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1 )
+
+[node name="TrashCan" parent="Staircase" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.8503, -17.6576 )
+
+[node name="Spawnpoint" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.20139, 33.6064 )
+
+[node name="HumanSpawn" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.7581, 13, -59.2157 )
+
+[node name="Floor" parent="." instance=ExtResource( 2 )]
+
+[node name="Staircase2" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.75126, -11.0859 )
+
+[node name="ExitPortal" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 0.25, 0, 0, 0, 4, 0, 2.33954, 32.9663 )

@@ -1,0 +1,56 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/Scenes/Scenery/TrashCan.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scenes/Scenery/Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Scenery/House1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/ExitPortal.tscn" type="PackedScene" id=4]
+
+[node name="Level2" type="Spatial"]
+
+[node name="TrashCan" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 337.215, 33.3988, -0.827705 )
+
+[node name="House1" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 52.7742, 2.31914, -7.64737 )
+
+[node name="House2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 148.41, 2.31914, -7.64737 )
+
+[node name="House3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 244.762, 2.31914, -7.64737 )
+
+[node name="House4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, 337.361, 2.31914, -7.64737 )
+
+[node name="Spawnpoint" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9846, 33.8014, 24.0376 )
+
+[node name="HumanSpawn" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.28652, 13, 4.98543 )
+
+[node name="HumanSpawn2" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 108.453, 13, -8.64019 )
+
+[node name="HumanSpawn3" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 203.361, 13, -9.25525 )
+
+[node name="HumanSpawn4" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 293.969, 13, -8.44621 )
+
+[node name="HumanSpawn5" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 293.969, 13, -8.44621 )
+
+[node name="Floor" parent="." instance=ExtResource( 2 )]
+
+[node name="ExitPortal" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 0.25, 0, 0, 0, 4, 24.5735, 27.643, 22.9553 )

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/Scenery/ExitPortal.cs" type="Script" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.0431373, 0.835294, 0.054902, 1 )
+
+[sub_resource type="BoxShape" id=3]
+
+[node name="ExitPortal" type="StaticBody"]
+transform = Transform( 4, 0, 0, 0, 0.25, 0, 0, 0, 4, 0, 0, 0 )
+script = ExtResource( 1 )
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+mesh = SubResource( 1 )
+material = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 3 )

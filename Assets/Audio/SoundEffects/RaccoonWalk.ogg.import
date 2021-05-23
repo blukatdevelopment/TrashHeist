@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/RaccoonWalk.ogg-2b78dfeb5232901b4b9d6ae7bc6b0798.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/SoundEffects/RaccoonWalk.ogg"
+dest_files=[ "res://.import/RaccoonWalk.ogg-2b78dfeb5232901b4b9d6ae7bc6b0798.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

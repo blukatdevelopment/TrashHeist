@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/PicnicTable.obj-92d8f48458a890d3793ce3da60469ceb.mesh"
+
+[deps]
+
+files=[ "res://.import/PicnicTable.obj-92d8f48458a890d3793ce3da60469ceb.mesh" ]
+
+source_file="res://Assets/Models/PicnicTable.obj"
+dest_files=[ "res://.import/PicnicTable.obj-92d8f48458a890d3793ce3da60469ceb.mesh", "res://.import/PicnicTable.obj-92d8f48458a890d3793ce3da60469ceb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

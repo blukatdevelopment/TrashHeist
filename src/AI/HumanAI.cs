@@ -65,7 +65,7 @@ namespace AI
 
         private void LookForTarget()
         {
-            target = Main.player.body;
+            target = Main.Player.body;
             if(target == null)
             {
                 return;

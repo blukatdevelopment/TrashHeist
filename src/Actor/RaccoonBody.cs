@@ -4,6 +4,8 @@ namespace Actor
 	using Godot;
 	using Global;
 	using Menu;
+	using Audio;
+	using System;
 
 	public class RaccoonBody : Body
 	{
@@ -20,6 +22,8 @@ namespace Actor
 		public bool jumpReady;
 		public float interactDelay;
 		public CollisionShape torso;
+		private Speaker speaker;
+		private Speaker footSpeaker;
 	
 		public void AssignActor(Actor actor, bool addCamera, string headNodePath, string torsoPath, Vector3 cameraPosition)
 		{
@@ -31,6 +35,9 @@ namespace Actor
 			camera = new Camera();
 			head.AddChild(camera);
 			camera.Transform = camera.Transform.Translated(cameraPosition);
+			camera.Far = 900f;
+			speaker = new Speaker(camera);
+			footSpeaker = new Speaker(camera);
 		  }
 		  torso = FindNode(torsoPath) as CollisionShape;
 		  Resume();
@@ -55,6 +62,7 @@ namespace Actor
 			if(!paused)
 			{
 				Move(movement);
+				ApplyWalkSound();
 				Move(jumpThrust);
 				ApplyGravity();
 				UpdateJumpThrust();
@@ -62,6 +70,19 @@ namespace Actor
 				AimCamera();
 				aimMagnitude = new Vector3();
 				UpdateInteractDelay();
+			}
+		}
+
+		private void ApplyWalkSound()
+		{
+			bool moving = movement.x != 0f || movement.z != 0f;
+			if(moving && !footSpeaker.Playing)
+			{
+				footSpeaker.PlaySound(SoundEnum.RaccoonWalk, true, Constants.SoundEffectsVolume);
+			}
+			else if (!moving && footSpeaker.Playing)
+			{
+				footSpeaker.StopSound();
 			}
 		}
 
@@ -97,9 +118,16 @@ namespace Actor
 	  
 			Vector3 delta = destination.origin - current.origin;
 			KinematicCollision collision = MoveAndCollide(delta);
+			
+
 			if(collision != null && collision.Position.y < this.Transform.origin.y)
 			{
 				jumpReady = true;
+			}
+			Node colliderNode = collision?.Collider as Node;
+			if(colliderNode != null && colliderNode.IsInGroup(Constants.HazardGroup))
+			{
+				Main.Game.GameOver();
 			}
 		}
 	
@@ -108,6 +136,8 @@ namespace Actor
 			paused = true;
 			Input.SetMouseMode(Input.MouseMode.Visible);
 			Main.Game.menuManager.SwitchMenu(MenuManager.Menus.Pause);
+			speaker.StopSound();
+			footSpeaker.StopSound();
 		}
 	
 		public override void Resume()
@@ -212,6 +242,7 @@ namespace Actor
 			Vector3 jump = Constants.JumpThrust();
 			if(jumpReady && actionEvent.action == ActionEnum.Jump)
 			{
+				speaker.PlaySound(SoundEnum.RaccoonJump, false, Constants.SoundEffectsVolume);
 				jumpThrust = jump;
 				jumpReady = false;
 			}

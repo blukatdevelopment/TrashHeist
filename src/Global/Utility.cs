@@ -50,16 +50,22 @@ namespace Global
   		return collider;
 	  }
 
-	// Use this to find methods for classes when the docs won't
-	public static void ShowMethods(Type type){
-	  foreach (var method in type.GetMethods()){
-		string ret = "" + method.ReturnType +"," + method.Name;
-		foreach( var parameter in method.GetParameters()){
-		  ret += ", " + parameter.ParameterType + " " + parameter.Name; 
+		// Use this to find methods for classes when the docs won't
+		public static void ShowMethods(Type type){
+		  foreach (var method in type.GetMethods()){
+			string ret = "" + method.ReturnType +"," + method.Name;
+			foreach( var parameter in method.GetParameters()){
+			  ret += ", " + parameter.ParameterType + " " + parameter.Name; 
+			}
+			GD.Print(ret);
+			System.Threading.Thread.Sleep(100);
+		  }
 		}
-		GD.Print(ret);
-		System.Threading.Thread.Sleep(100);
+		  // Use this to find variables for classes
+	  public static void ShowProperties(Type type){
+		foreach(PropertyInfo prop in type.GetProperties()){
+		  GD.Print(prop.Name + " : " + prop.PropertyType );
+		}
 	  }
-	}
   }
 }

@@ -30,6 +30,17 @@ namespace Menu
                     Main.Game.MainMenu();
                 }
             );
+
+            Button restart = new Button(
+                this,
+                "Restart Level",
+                new Vector2(200f, 200f),
+                new Vector2(0f, 400f),
+                () => 
+                {
+                    Main.Game.RestartLevel();
+                }
+            );
         }
 
     }

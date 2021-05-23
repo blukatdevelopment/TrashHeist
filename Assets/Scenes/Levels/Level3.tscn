@@ -1,0 +1,440 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Scenes/Scenery/TrashCan.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Scenes/Scenery/Floor.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Scenes/Scenery/House1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Scenes/ExitPortal.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Scenes/Scenery/Van.tscn" type="PackedScene" id=5]
+
+[node name="Level3" type="Spatial"]
+
+[node name="Spawnpoint" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.20139, 33.6064 )
+
+[node name="HumanSpawn" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6031, 13, -26.9283 )
+
+[node name="HumanSpawn2" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6031, 13, -84.2645 )
+
+[node name="HumanSpawn3" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6031, 13, -141.986 )
+
+[node name="HumanSpawn4" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.6031, 13, -200.149 )
+
+[node name="HumanSpawn5" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87.3441, 13, -200.149 )
+
+[node name="HumanSpawn6" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87.3441, 13, -29.5248 )
+
+[node name="HumanSpawn7" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 87.3441, 13, -126.061 )
+
+[node name="HumanSpawn8" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.203, 13, -87.4941 )
+
+[node name="HumanSpawn9" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.203, 13, -144.53 )
+
+[node name="HumanSpawn10" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 127.203, 13, -201.498 )
+
+[node name="HumanSpawn11" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 184.804, 13, -201.498 )
+
+[node name="HumanSpawn12" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 184.804, 13, -184.455 )
+
+[node name="HumanSpawn13" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 184.804, 13, -184.455 )
+
+[node name="HumanSpawn14" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 173.969, 13, -206.037 )
+
+[node name="HumanSpawn15" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162.1, 13, -187.714 )
+
+[node name="HumanSpawn16" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 162.1, 13, -72.571 )
+
+[node name="HumanSpawn17" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.43, 13, -72.571 )
+
+[node name="HumanSpawn18" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 181.43, 13, -91.4834 )
+
+[node name="HumanSpawn19" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 163.796, 13, -91.4834 )
+
+[node name="HumanSpawn20" type="Spatial" parent="." groups=[
+"HumanSpawn",
+]]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 163.796, 13, -91.4834 )
+
+[node name="Floor" parent="." instance=ExtResource( 2 )]
+
+[node name="ExitPortal" parent="." instance=ExtResource( 4 )]
+transform = Transform( 4, 0, 0, 0, 0.25, 0, 0, 0, 4, 0.0303955, 2.33954, 70.85 )
+
+[node name="Vans" type="Spatial" parent="."]
+
+[node name="Van" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 3.66238, 2.83945, -33.7741 )
+
+[node name="Van2" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 19.4252, 2.83945, -33.7741 )
+
+[node name="Van3" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 36.5987, 2.83945, -33.7741 )
+
+[node name="Van4" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 52.2913, 2.83945, -33.7741 )
+
+[node name="Van13" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 3.66238, 2.83945, -98.489 )
+
+[node name="Van14" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 19.4252, 2.83945, -98.489 )
+
+[node name="Van15" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 36.5987, 2.83945, -98.489 )
+
+[node name="Van16" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 52.2913, 2.83945, -98.489 )
+
+[node name="Van5" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 52.2913, 2.83945, -55.5235 )
+
+[node name="Van6" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 35.4758, 2.83945, -55.5235 )
+
+[node name="Van7" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 18.4714, 2.83945, -55.5235 )
+
+[node name="Van8" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 2.92407, 2.83945, -55.5235 )
+
+[node name="Van17" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 3.66238, 2.83945, -154.822 )
+
+[node name="Van18" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 19.4252, 2.83945, -154.822 )
+
+[node name="Van19" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 36.5987, 2.83945, -154.822 )
+
+[node name="Van20" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 52.2913, 2.83945, -154.822 )
+
+[node name="Van21" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 52.2913, 2.83945, -176.571 )
+
+[node name="Van22" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 35.4758, 2.83945, -176.571 )
+
+[node name="Van23" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 18.4714, 2.83945, -176.571 )
+
+[node name="Van24" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 2.92407, 2.83945, -176.571 )
+
+[node name="Van25" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 3.66238, 2.83945, -220.7 )
+
+[node name="Van26" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 19.4252, 2.83945, -220.7 )
+
+[node name="Van27" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 36.5987, 2.83945, -220.7 )
+
+[node name="Van28" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 52.2913, 2.83945, -220.7 )
+
+[node name="Van29" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 52.2913, 2.83945, -242.449 )
+
+[node name="Van30" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 35.4758, 2.83945, -242.449 )
+
+[node name="Van31" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 18.4714, 2.83945, -242.449 )
+
+[node name="Van32" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 2.92407, 2.83945, -242.449 )
+
+[node name="Van9" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 52.2913, 2.83945, -119.792 )
+
+[node name="Van10" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 35.4758, 2.83945, -119.792 )
+
+[node name="Van11" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 18.4714, 2.83945, -119.792 )
+
+[node name="Van12" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 2.92407, 2.83945, -119.792 )
+
+[node name="Van33" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 99.8846, 2.83945, -33.7741 )
+
+[node name="Van34" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 115.647, 2.83945, -33.7741 )
+
+[node name="Van35" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 132.821, 2.83945, -33.7741 )
+
+[node name="Van36" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 148.513, 2.83945, -33.7741 )
+
+[node name="Van37" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 99.8846, 2.83945, -98.489 )
+
+[node name="Van38" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 115.647, 2.83945, -98.489 )
+
+[node name="Van39" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 132.821, 2.83945, -98.489 )
+
+[node name="Van40" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 148.513, 2.83945, -98.489 )
+
+[node name="Van41" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 148.513, 2.83945, -55.5235 )
+
+[node name="Van42" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 131.698, 2.83945, -55.5235 )
+
+[node name="Van43" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 114.694, 2.83945, -55.5235 )
+
+[node name="Van44" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 99.1463, 2.83945, -55.5235 )
+
+[node name="Van45" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 99.8846, 2.83945, -154.822 )
+
+[node name="Van46" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 115.647, 2.83945, -154.822 )
+
+[node name="Van47" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 132.821, 2.83945, -154.822 )
+
+[node name="Van48" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 148.513, 2.83945, -154.822 )
+
+[node name="Van49" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 148.513, 2.83945, -176.571 )
+
+[node name="Van50" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 131.698, 2.83945, -176.571 )
+
+[node name="Van51" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 114.694, 2.83945, -176.571 )
+
+[node name="Van52" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 99.1463, 2.83945, -176.571 )
+
+[node name="Van53" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 99.8846, 2.83945, -220.7 )
+
+[node name="Van54" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 115.647, 2.83945, -220.7 )
+
+[node name="Van55" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 132.821, 2.83945, -220.7 )
+
+[node name="Van56" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 148.513, 2.83945, -220.7 )
+
+[node name="Van57" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 148.513, 2.83945, -242.449 )
+
+[node name="Van58" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 131.698, 2.83945, -242.449 )
+
+[node name="Van59" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 114.694, 2.83945, -242.449 )
+
+[node name="Van60" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 99.1463, 2.83945, -242.449 )
+
+[node name="Van61" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 148.513, 2.83945, -119.792 )
+
+[node name="Van62" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 131.698, 2.83945, -119.792 )
+
+[node name="Van63" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 114.694, 2.83945, -119.792 )
+
+[node name="Van64" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 99.1463, 2.83945, -119.792 )
+
+[node name="Van65" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 187.194, 2.83945, -33.7741 )
+
+[node name="Van66" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 202.956, 2.83945, -33.7741 )
+
+[node name="Van67" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 220.13, 2.83945, -33.7741 )
+
+[node name="Van68" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 235.822, 2.83945, -33.7741 )
+
+[node name="Van69" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 187.194, 2.83945, -98.489 )
+
+[node name="Van70" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 202.956, 2.83945, -98.489 )
+
+[node name="Van71" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 220.13, 2.83945, -98.489 )
+
+[node name="Van72" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 235.822, 2.83945, -98.489 )
+
+[node name="Van73" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 235.822, 2.83945, -55.5235 )
+
+[node name="Van74" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 219.007, 2.83945, -55.5235 )
+
+[node name="Van75" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 202.003, 2.83945, -55.5235 )
+
+[node name="Van76" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 186.455, 2.83945, -55.5235 )
+
+[node name="Van77" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 187.194, 2.83945, -154.822 )
+
+[node name="Van78" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 202.956, 2.83945, -154.822 )
+
+[node name="Van79" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 220.13, 2.83945, -154.822 )
+
+[node name="Van80" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 235.822, 2.83945, -154.822 )
+
+[node name="Van81" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 235.822, 2.83945, -176.571 )
+
+[node name="Van82" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 219.007, 2.83945, -176.571 )
+
+[node name="Van83" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 202.003, 2.83945, -176.571 )
+
+[node name="Van84" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 186.455, 2.83945, -176.571 )
+
+[node name="Van85" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 187.194, 2.83945, -220.7 )
+
+[node name="Van86" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 202.956, 2.83945, -220.7 )
+
+[node name="Van87" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 220.13, 2.83945, -220.7 )
+
+[node name="Van88" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( 1.99992, 0, 0.0174879, 0, 2, 0, -0.0174879, 0, 1.99992, 235.822, 2.83945, -220.7 )
+
+[node name="Van89" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 235.822, 2.83945, -242.449 )
+
+[node name="Van90" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 219.007, 2.83945, -242.449 )
+
+[node name="Van91" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 202.003, 2.83945, -242.449 )
+
+[node name="Van92" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 186.455, 2.83945, -242.449 )
+
+[node name="Van93" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 235.822, 2.83945, -119.792 )
+
+[node name="Van94" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 219.007, 2.83945, -119.792 )
+
+[node name="Van95" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 202.003, 2.83945, -119.792 )
+
+[node name="Van96" parent="Vans" instance=ExtResource( 5 )]
+transform = Transform( -1.99891, 0, -0.0659965, 0, 2, 0, 0.0659965, 0, -1.99891, 186.455, 2.83945, -119.792 )
+
+[node name="House1" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, -31.2634 )
+
+[node name="House2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, -109.623 )
+
+[node name="House3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, -189.098 )
+
+[node name="House4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, -268.846 )
+
+[node name="House5" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, -346.331 )
+
+[node name="House7" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.00829003, 0, 4.99999, 0, 5, 0, -4.99999, 0, -0.00829003, 24.7518, 2.52777, -346.331 )
+
+[node name="House8" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.00829003, 0, 4.99999, 0, 5, 0, -4.99999, 0, -0.00829003, 103.426, 2.52777, -346.331 )
+
+[node name="House9" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.00829003, 0, 4.99999, 0, 5, 0, -4.99999, 0, -0.00829003, 183.572, 2.52777, -346.331 )
+
+[node name="House10" parent="." instance=ExtResource( 3 )]
+transform = Transform( -0.00829003, 0, 4.99999, 0, 5, 0, -4.99999, 0, -0.00829003, 261.726, 2.52777, -346.331 )
+
+[node name="House6" parent="." instance=ExtResource( 3 )]
+transform = Transform( 5, 0, 0, 0, 5, 0, 0, 0, 5, -55.3875, 2.52777, 48.4906 )
+
+[node name="TrashCan" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.4631, 2.03202, -264.481 )

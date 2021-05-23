@@ -42,9 +42,11 @@ namespace Menu
                 break;
 
                 case Menus.Win:
+                    activeMenu = new WinMenu(this);
                 break;
 
                 case Menus.Next:
+                    activeMenu = new NextMenu(this);
                 break;
 
                 case Menus.Lose:

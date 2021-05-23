@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Gazebo.obj-44d96b348400d1082edcc7594280c755.mesh"
+
+[deps]
+
+files=[ "res://.import/Gazebo.obj-44d96b348400d1082edcc7594280c755.mesh" ]
+
+source_file="res://Assets/Models/Gazebo.obj"
+dest_files=[ "res://.import/Gazebo.obj-44d96b348400d1082edcc7594280c755.mesh", "res://.import/Gazebo.obj-44d96b348400d1082edcc7594280c755.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

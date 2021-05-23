@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Raccoon.obj-a4ebf8566b0756964e511ba5295df556.mesh"
+
+[deps]
+
+files=[ "res://.import/Raccoon.obj-a4ebf8566b0756964e511ba5295df556.mesh" ]
+
+source_file="res://Assets/Models/Raccoon.obj"
+dest_files=[ "res://.import/Raccoon.obj-a4ebf8566b0756964e511ba5295df556.mesh", "res://.import/Raccoon.obj-a4ebf8566b0756964e511ba5295df556.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

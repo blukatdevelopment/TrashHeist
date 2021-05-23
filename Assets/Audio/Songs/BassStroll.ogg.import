@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/BassStroll.ogg-baae5dffa958ad468497b95c6200b4be.oggstr"
+
+[deps]
+
+source_file="res://Assets/Audio/Songs/BassStroll.ogg"
+dest_files=[ "res://.import/BassStroll.ogg-baae5dffa958ad468497b95c6200b4be.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
